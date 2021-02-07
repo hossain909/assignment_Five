@@ -34,13 +34,14 @@ const showMeals = (meals) => {
             <h2 class="mealHeader">${meal.strMeal}</h2>
             <h4>Ingredients</h4>
             <form style="margin-bottom: 50px">
-              <input type="checkbox" checked> ${meal.strIngredient1}</input><br>
-              <input type="checkbox" checked> ${meal.strIngredient2}</input><br>
-              <input type="checkbox" checked> ${meal.strIngredient3}</input><br>
-              <input type="checkbox" checked> ${meal.strIngredient4}</input><br>
-              <input type="checkbox" checked> ${meal.strIngredient5}</input><br>
-              <input type="checkbox" checked> ${meal.strIngredient6}</input>
-            <form>
+              <input type="checkbox" checked>${meal.strMeasure1} ${meal.strIngredient1}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure2} ${meal.strIngredient2}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure3} ${meal.strIngredient3}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure4} ${meal.strIngredient4}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure5} ${meal.strIngredient5}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure6} ${meal.strIngredient6}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient7}</input><br>
+              <form>
             `;
       createNewDiv.innerHTML = ingredientHTML;
       displayIngredients.appendChild(createNewDiv);
