@@ -5,6 +5,9 @@
   text-align: center;
   margin-top: 100px;
 }
+#inputVal{
+  font-size: 20px;
+}
 #container{
   font-family: Arial, Helvetica, sans-serif;
   display: grid;

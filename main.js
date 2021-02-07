@@ -5,14 +5,19 @@ searchBtn.addEventListener("click", () => {
   displayMeal(inputText);
 });
 
-const displayMeal = (inputMeal) => {
-  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputMeal}`)
+const displayMeal = (inputText) => {
+  if(inputText == ""){
+    return
+  }else{
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputText}`)
     .then((res) => res.json())
     .then((data) => showMeals(data.meals))
     .catch(error => {
       alert("Sorry! nothing was found")
       document.getElementById("inputVal").value = "";
     })
+  }
+ 
 };
 
 const showMeals = (meals) => {
