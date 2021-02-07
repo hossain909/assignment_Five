@@ -1,0 +1,58 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.searchDiv{
+  text-align: center;
+  margin-top: 100px;
+}
+#container{
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-row-gap: 50px;
+  justify-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+#displayIngredients{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: left;
+}
+#displayIngredients img{
+  width: 600px;
+  height: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.meal{
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+input{
+  padding: 12px 50px;
+}
+input::placeholder{
+  font-size: 18px;
+}
+button{
+  font-size: 18px;
+  padding: 9px 25px;
+  background-color: #f712b2;
+  color: floralwhite;
+}
+.mealImg{
+  width: 300px;
+  height: 200px;
+}
+ol{
+  margin-bottom: 20px;
+}
