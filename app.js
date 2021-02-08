@@ -24,7 +24,7 @@ const showMealsOnUI = (items) => {
 
   items.forEach((meal) => {
     const createDiv = document.createElement("div")
-    createDiv.classList.add("meal")
+    createDiv.classList.add("mealStyle")
     const html = `
      <img class="mealImg" src="${meal.strMealThumb}">
      <h3 class="mealHeader">${meal.strMeal}</h3>

@@ -59,7 +59,7 @@
 .remove{
   display: none;
 }
-.meal{
+.mealStyle{
   box-shadow: 5px 5px 10px gray;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -67,7 +67,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.meal img{
+.mealStyle img{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
