@@ -43,28 +43,28 @@ const showMealsOnUI = (items) => {
           <h4>Ingredients</h4>
 
           <form style="margin-bottom: 50px">
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure1} ${meal.strIngredient1}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure2} ${meal.strIngredient2}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure3} ${meal.strIngredient3}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure4} ${meal.strIngredient4}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure5} ${meal.strIngredient5}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure6} ${meal.strIngredient6}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient7}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure8} ${meal.strIngredient8}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure9} ${meal.strIngredient9}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure10} ${meal.strIngredient10}</li><br>
-            <li class="inputText" type="checkbox" checked>${meal.strMeasure11} ${meal.strIngredient11}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure1} ${meal.strIngredient1}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure2} ${meal.strIngredient2}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure3} ${meal.strIngredient3}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure4} ${meal.strIngredient4}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure5} ${meal.strIngredient5}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure6} ${meal.strIngredient6}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient7}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure8} ${meal.strIngredient8}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure9} ${meal.strIngredient9}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure10} ${meal.strIngredient10}</li><br>
+            <li class="liText" type="checkbox" checked>${meal.strMeasure11} ${meal.strIngredient11}</li><br>
           </form>
       `;
 
       createNewDiv.innerHTML = ingredientHTML;
       displayIngredients.appendChild(createNewDiv);
 
-      const inputs = document.querySelectorAll(".inputText");
-      for (let i = 0; i < inputs.length; i++) {
-        const input = inputs[i];
-        if (input.innerText === "") {
-          input.classList.add("remove");
+      const ingredientLists = document.querySelectorAll(".liText");
+      for (let i = 0; i < ingredientLists.length; i++) {
+        const liItem = ingredientLists[i];
+        if (liItem.innerText === "") {
+          liItem.classList.add("remove");
         }
       }
     });
