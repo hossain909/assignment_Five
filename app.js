@@ -27,7 +27,7 @@ const showMealsOnUI = (items) => {
     createDiv.classList.add("meal")
     const html = `
      <img class="mealImg" src="${meal.strMealThumb}">
-     <h2 class="mealHeader">${meal.strMeal}</h2>
+     <h3 class="mealHeader">${meal.strMeal}</h3>
      `;
 
     createDiv.innerHTML = html;
