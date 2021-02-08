@@ -46,8 +46,11 @@ const showMeals = (meals) => {
               <input type="checkbox" checked>${meal.strMeasure5} ${meal.strIngredient5}</input><br>
               <input type="checkbox" checked>${meal.strMeasure6} ${meal.strIngredient6}</input><br>
               <input type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient7}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient8}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient9}</input><br>
+              <input type="checkbox" checked>${meal.strMeasure7} ${meal.strIngredient10}</input><br>
               <form>
-            `;
+            `
       createNewDiv.innerHTML = ingredientHTML;
       displayIngredients.appendChild(createNewDiv);
     });
